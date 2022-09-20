@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.back  .video{
+    height:100vh;
+    width:100%;
+    overflow: hidden;
+    position: absolute;
+    z-index:-1;
+}
+.back  .video video{
+    width:100%;
+}
+.text{
+    font-family:Consolas;
+    color:white;
+    border:2px solid white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    width:500px;
+    text-align: center;
+    padding-left:2%;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}

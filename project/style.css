@@ -1,0 +1,160 @@
+.back video{
+width:100%;
+}
+.back{
+    height:100vh;
+    width:100%;
+    overflow: hidden;
+    position: absolute;
+    z-index:-1;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+.container .card{
+    height:500px;
+    width:800px;
+    background-color:rgb(0,0,0,0.3);
+    border-radius:12px;
+    overflow: hidden;
+}
+.container .card .title{
+    color:white;
+    font-family:Poppins;
+}
+.container .card .folders{
+    margin:5%;
+    margin-top:0%;
+    display: flex;
+    flex-wrap:wrap;
+    overflow:auto;
+    height:350px;
+}
+.container .card .folders .folder{
+    width:100px;
+    margin-right:5%;
+    margin-top:5%;
+}
+.container .card .folders .folder i{
+    color:grey;;
+    font-size:4rem;
+}
+.container .card .folders .folder{
+    text-align:center;
+    font-family:consolas;
+    color:grey;
+    font-size:0.8rem;
+    cursor: pointer;
+}
+.container .card .folders .folder i:hover{
+    color:white;
+    transition-duration:0.3s;
+}
+.container .card .folders::-webkit-scrollbar{
+    -webkit-appearance:none;
+    width:8px;
+}
+.container .card .folders::-webkit-scrollbar-track{
+    -webkit-appearance:none;
+    border-radius:75px;
+    background-color:white;
+}
+.container .card .folders::-webkit-scrollbar-thumb{
+    background-color:rgb(54, 53, 53);
+    border-radius:75px;
+}
+.container .card .header{
+    display:flex;
+    align-items: center;
+    margin:5%;
+    margin-bottom:2%;
+}
+.container .card .header .languages{
+    display: flex;
+    align-items: center;
+    margin-left:10%;
+}
+.container .card .header button{
+    height:20px;
+    margin-right:5%;
+    padding:2%;
+    border:none;
+    font-family:Poppins;
+    display: flex;
+    align-items: center;
+    font-size:0.8rem;
+    cursor: pointer;
+}
+.container .card .show{
+    display:none;
+}
+.codes{
+    color:white;
+    margin:5%;
+    overflow: auto;
+    width:90%;
+    height:300px;
+    font-size:0.8rem;
+}
+pre{
+    /* overflow: auto;   */
+    height:400px;
+    width:100%;
+}
+.codes::-webkit-scrollbar{
+    -webkit-appearance:none;
+    width:8px;
+    height:8px;
+}
+.codes::-webkit-scrollbar-track{
+    -webkit-appearance:none;
+    border-radius:75px;
+    background-color:white;
+}
+.codes::-webkit-scrollbar-thumb{
+    background-color:rgb(54, 53, 53);
+    border-radius:75px;
+}
+.copy{
+    display: flex;
+    justify-content:right;
+    padding-right:10%;
+}
+.copy button{
+    height:30px;
+    width:100px;
+    cursor: pointer;
+    display:none;
+}
+.container .used-languages{
+    margin-left:5%;
+    width:100%;
+    display:flex;
+    display:none;
+}
+.container .used-languages button{
+    border:none;
+    height:20px;
+    padding:2%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-right:2%;
+    cursor: pointer;
+}
+.container .used-languages a{
+    margin-right:5%;
+    text-decoration:none;
+}
+.container .used-languages  button{
+    height:30px;
+    width:100px;
+}
