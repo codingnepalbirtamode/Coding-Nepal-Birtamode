@@ -182,6 +182,9 @@ body{
     body{
         background-color:black;
     }
+    .back video:nth-child(1){
+        display:none;
+    }
     .back video:nth-child(2){
         display:block;
         opacity:0.5;
