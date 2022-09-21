@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+    <meta name="viewport" content="width=device-width" />
     <title>CNB | Coding Nepal Birtamode</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Poppins&display=swap"
@@ -12,72 +14,78 @@
 </head>
 
 <body>
-    <div class="back">
-        <video src="back.mp4" autoplay loop muted></video>
-    </div>
-    <div class="nav-bar">
-        <ul>
-            <li><a href="#" id="coder">Coders</a></li>
-            <li><a href="project/project.html">Projects</a></li>
-            <li><a href="update/update.html">Deal</a></li>
-        </ul>
-    </div>
-    <div class="container">
-        <div class="header">
-            <h1>CODING NEPAL BIRTAMODE</h1>
-            <p>Whether you’re an aspiring or junior front-end, back-end, or full-stack developer, building
-                real-world
-                projects is not only one of the best ways to learn and improve your coding skills but is also
-                crucial
-                for you to build an attractive portfolio to advance your career. But what projects can you work on?
-                Join Us to do the best Projects.</p>
+    <div class="big-container">
+        <div class="back">
+            <video src="back.mp4" autoplay loop muted></video>
+            <video src="backv-2.mp4" autoplay loop muted></video>
         </div>
-        <div class="button">
-            <a href="https://www.youtube.com/channel/UCwIvGliCk2KecX9tdFbV82Q?sub_confirmation=1" target="_blank">
-                <button>SUBSCRIBE</button></a>
+        <div class="nav-bar">
+            <ul>
+                <li><a href="#" id="coder">Coders</a></li>
+                <li><a href="project/project.html">Projects</a></li>
+                <li><a href="update/update.html">Deal</a></li>
+            </ul>
         </div>
-    </div>
-    <div class="coder-box">
-        <div class="header">
-            <div class="image-cont">
-                <div class="image">
-                    <img src="https://www.creativefabrica.com/wp-content/uploads/2020/12/15/coding-logo-in-a-modern-style-Graphics-7189080-1.jpg"
-                        alt="">
+        <div class="container">
+            <div class="header">
+                <h1>CODING NEPAL BIRTAMODE</h1>
+                <p>Whether you’re an aspiring or junior front-end, back-end, or full-stack developer, building
+                    real-world
+                    projects is not only one of the best ways to learn and improve your coding skills but is also
+                    crucial
+                    for you to build an attractive portfolio to advance your career. But what projects can you work on?
+                    Join Us to do the best Projects.</p>
+            </div>
+            <div class="button">
+                <a href="https://www.youtube.com/channel/UCwIvGliCk2KecX9tdFbV82Q?sub_confirmation=1" target="_blank">
+                    <button>SUBSCRIBE</button></a>
+            </div>
+        </div>
+        <div class="coder-box" id="cod-box">
+            <div class="header">
+                <div class="image-cont">
+                    <div class="image">
+                        <img src="https://www.creativefabrica.com/wp-content/uploads/2020/12/15/coding-logo-in-a-modern-style-Graphics-7189080-1.jpg"
+                            alt="">
+                    </div>
+                </div>
+                <div class="name">
+                    Dipesh Murmu
+                    <p>Front-End | Back-end developer</p>
                 </div>
             </div>
-            <div class="name">
-                Dipesh Murmu
-                <p>Front-End | Back-end developer</p>
+            <div class="coder-body">
+                Over the past 3 years, as a Front-end Developer, I Have designed, developed and lunched customized,
+                highly
+                responsive webistes and ecommerce solution using
+                advanced technologies. In addition, I have consistently met client expectations and project milestones
+                while
+                working effectively in deadline-driven environments.
             </div>
-        </div>
-        <div class="coder-body">
-            Over the past 3 years, as a Front-end Developer, I Have designed, developed and lunched customized, highly
-            responsive webistes and ecommerce solution using
-            advanced technologies. In addition, I have consistently met client expectations and project milestones while
-            working effectively in deadline-driven environments.
-        </div>
-        <div class="progess-bar">
-            HTML
-            <div class="bar">
-                <div class="inner"></div>
-            </div>
-            CSS
-            <div class="bar css">
-                <div class="inner"></div>
-            </div>
-            JAVASCRIPT
-            <div class="bar  js">
-                <div class="inner"></div>
-            </div>
-            Node.js
-            <div class="bar node">
-                <div class="inner"></div>
+            <div class="progess-bar">
+                HTML
+                <div class="bar">
+                    <div class="inner"></div>
+                </div>
+                CSS
+                <div class="bar css">
+                    <div class="inner"></div>
+                </div>
+                JAVASCRIPT
+                <div class="bar  js">
+                    <div class="inner"></div>
+                </div>
+                Node.js
+                <div class="bar node">
+                    <div class="inner"></div>
+                </div>
             </div>
         </div>
     </div>
     <script>
         let navcoder = document.getElementById('coder');
         let coder = document.querySelector('.coder-box');
+        let codbox = document.getElementById('cod-box');
         navcoder.addEventListener('click', () => {
             coder.classList.toggle('coder-box-ani');
         })
