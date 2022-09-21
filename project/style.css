@@ -189,6 +189,7 @@ pre{
     }
     .back video:nth-child(2){
         display:block;
+        width:150%;
     }
     .container .card .folders{
         justify-content:space-between;
